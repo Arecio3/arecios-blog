@@ -6,13 +6,26 @@
   top: 0;
   display: flex;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .topLeft,
 .topRight {
   /* 20% left and 20% right */
   flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .topImg {
@@ -22,35 +35,32 @@
     object-fit: cover;
 }
 
-.topCenter {
-  flex: 6;
-}
 
-.facebookIcon {
+#facebookIcon {
   color: #385898;
 }
-.twitterIcon {
+#twitterIcon {
   color: #1da1f2;
 }
-.igIcon {
-  background: linear-gradient(
-    187deg,
-    rgba(81, 91, 212, 1) 0%,
-    rgba(129, 52, 175, 1) 24%,
-    rgba(221, 42, 123, 1) 50%,
-    rgba(254, 218, 119, 1) 79%,
-    rgba(245, 133, 41, 1) 100%
-  );
-  color: white;
-  border-radius: 2px;
-  border-collapse: collapse;
+#igIcon {
+  color: #8134af;
 }
-.pintrestIcon {
+#pintrestIcon {
     color: crimson;
 }
-.snapIcon {
+#snapIcon {
     color: #ffd801;
 }
 .topList {
-    font-weight: 200;
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.topListItem {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
 }

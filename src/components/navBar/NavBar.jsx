@@ -7,11 +7,11 @@ export default function NavBar() {
         <div>
             <div className="top">
                <div className="topLeft">
-                   <i className="fab fa-facebook-square facebookIcon"></i>
-                   <i className="fab fa-twitter-square twitterIcon"></i>
-                   <i className="fab fa-instagram igIcon"></i>
-                   <i className="fab fa-pinterest-square pintrestIcon"></i>
-                   <i className="fab fa-snapchat-square snapIcon"></i>
+                   <i className="topIcon fab fa-facebook-square" id='facebookIcon'></i>
+                   <i className="topIcon fab fa-twitter-square" id='twitterIcon'></i>
+                   <i className="topIcon fab fa-instagram" id='igIcon'></i>
+                   <i className="topIcon fab fa-pinterest-square" id='pintrestIcon'></i>
+                   <i className="topIcon fab fa-snapchat-square" id='snapIcon'></i>
                </div>
                <div className="topCenter">
                    <ul className="topList">
