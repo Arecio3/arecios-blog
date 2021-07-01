@@ -24,7 +24,7 @@ export default function NavBar() {
                </div>
                <div className="topRight">
                    <img className='topImg' src={selfie} alt="" />
-                   <i className="fas fa-search"></i>
+                   <i className="fas fa-search searchIcon"></i>
                </div>
             </div>
         </div>
