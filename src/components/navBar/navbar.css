@@ -58,12 +58,22 @@
    margin: 0;
    padding: 0;
    list-style: none;
+  }
+  
+  .topListItem {
+  font-weight: 100;
+  margin-right: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
 }
-
-.topListItem {
-    margin-right: 30px;
-    font-size: 18px;
-    font-weight: 300;
+.topListItem:hover {
+  font-weight: 200;
+  margin-right: 30px;
+  padding: 5px;
+  background-color: #385898;
+  color: white;
+  border-radius: 4px;
 }
 
 .searchIcon {
