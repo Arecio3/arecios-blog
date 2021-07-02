@@ -1,5 +1,6 @@
 import React from "react";
 import Nature from "../../images/natureBlogPic.jpeg";
+import { Link } from "react-router-dom";
 import "./post.css";
 
 export default function Post() {
@@ -11,7 +12,9 @@ export default function Post() {
           <span className="postCat">Music</span>
           <span className="postCat">Life</span>
         </div>
-        <span className="postTitle">Test Title</span>
+        <span className="postTitle">
+          <Link className='link' to='/post/:postId'>Test Title</Link>
+        </span>
         <hr />
         <span className="postDate">1 hour ago</span>
       </div>
