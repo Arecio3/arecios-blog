@@ -1,13 +1,13 @@
 .sideBar {
     flex: 3;
+    height: fit-content;
     margin: 20px;
-    padding-bottom: 30px;
     background-color: #fdfbfb;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 5px;
 }
 
 .sidebarItem {
