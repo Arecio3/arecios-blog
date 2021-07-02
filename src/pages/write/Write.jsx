@@ -1,14 +1,16 @@
 import React from 'react'
+import Example from '../../images/natureBlogPic.jpeg'
 import './write.css'
 
 export default function Write() {
     return (
         <div className='write'>
+            <img className='writeImg' src={Example} alt="" />
            <form className='writeBlogForm'>
                <div className="writeFormGroup">
                    {/* Label replaces ugly choose file button */}
                    <label htmlFor="fileInput">
-                   <i class="far fa-file-image"></i>
+                   <i className="addImgIcon far fa-file-image"></i>
                    </label>
                    <input type="file" id='fileInput' style={{display: 'none'}}/>
                    <input type="text" placeholder='Title' className='writeInput' autoFocus={true}/>
