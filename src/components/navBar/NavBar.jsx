@@ -4,7 +4,7 @@ import selfie from "../../images/selfieImg.jpg";
 import "./navbar.css";
 
 export default function NavBar() {
-  const user = false;
+  const user = true;
   return (
     <div>
       <div className="top">
@@ -23,12 +23,12 @@ export default function NavBar() {
               </Link>
             </li>
             <li className="topListItem">
-              <Link className="link" to="/">
+              <Link className="link" to="/about">
                 About
               </Link>
             </li>
             <li className="topListItem">
-              <Link className="link" to="/">
+              <Link className="link" to="/contact">
                 contact
               </Link>
             </li>
