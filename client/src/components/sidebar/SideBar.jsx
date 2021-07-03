@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Me from "../../images/aboutAuthor.jpeg";
+import { Link } from "react-router-dom";
+import axios from "axios";
 import "./sidebar.css";
 
 export default function SideBar() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const getCats = async () => {
+      const res = await axios.get("/categories");
+      setCategories(res.data);
+    };
+    getCats();
+  }, []);
+
   return (
     <div className="sideBar">
       <div className="sidebarItem">
         <span className="sidebarTitle">About Author</span>
-        <img className='sidebarImg' src={Me} alt="" />
+        <img className="sidebarImg" src={Me} alt="" />
         <p>
           Hey! My name is <strong>Arecio Canton</strong> and I created Deep
           Thoughts not just as a way to sharpen my skills as a full-stack
@@ -19,26 +31,28 @@ export default function SideBar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">Categories</span>
         <ul className="sidebarList">
-          <li className="sidebarListItem">Philosophy</li>
-          <li className="sidebarListItem">Music</li>
-          <li className="sidebarListItem">Sports</li>
-          <li className="sidebarListItem">Fashion</li>
-          <li className="sidebarListItem">Cars</li>
-          <li className="sidebarListItem">Technology</li>
-          <li className="sidebarListItem">Politics</li>
-          <li className="sidebarListItem">Psychology</li>
-          <li className="sidebarListItem">Cinema</li>
-          <li className="sidebarListItem">Food</li>
-          <li className="sidebarListItem">Video Games</li>
+          {categories.map((category, index) => (
+            <Link className='link' to={`/?category=${category.name}`}>
+              <li className="sidebarListItem" key={index}>
+                {category.name}
+              </li>
+            </Link>
+          ))}
         </ul>
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">Follow Me</span>
         <div className="sidebarSocial">
-          <i className="sidebarIcon fab fa-facebook-square" id="facebookIcon"></i>
+          <i
+            className="sidebarIcon fab fa-facebook-square"
+            id="facebookIcon"
+          ></i>
           <i className="sidebarIcon fab fa-twitter-square" id="twitterIcon"></i>
           <i className="sidebarIcon fab fa-instagram" id="igIcon"></i>
-          <i className="sidebarIcon fab fa-pinterest-square" id="pintrestIcon"></i>
+          <i
+            className="sidebarIcon fab fa-pinterest-square"
+            id="pintrestIcon"
+          ></i>
           <i className="sidebarIcon fab fa-snapchat-square" id="snapIcon"></i>
         </div>
       </div>
