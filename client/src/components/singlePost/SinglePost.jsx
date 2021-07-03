@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Nature from "../../images/natureBlogPic.jpeg";
+import axios from "axios";
 import "./singlepost.css";
 
 export default function SinglePost() {
+  const location = useLocation()
+  // console.log(location)
+  // split the path into 3 by splitting where each / is and then grabbing the id which is the 2nd index
+  // console.log(location.pathname.split('/')[2]) 
+  const path = (location.pathname.split('/')[2])
+  const [post, setPost] = useState({})
+  // So we make an axios call to get the data that was clicked on by the id "path"
+  useEffect(() => {
+    const getPost = async () => {
+      const res = await axios.get('/posts/' + path)
+      setPost(res.data)
+    }
+    getPost()
+  }, [path])
+
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img className="singlePostImg" src={Nature} alt="" />
+        {post.photo && ( <img className="singlePostImg" src={post.photo} alt="" />)}
         <h1 className="singlePostTitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         {post.title}
           <div className="singlePostEdit">
             <i className="singlePostIcon far fa-edit"></i>
             <i className="singlePostIcon far fa-trash-alt"></i>
@@ -16,43 +33,12 @@ export default function SinglePost() {
         </h1>
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
-            Author: <b>Arecio</b>
+            Author: <b>{post.username}</b>
           </span>
-          <span className="singlePostDate">1 hour ago</span>
+          <span className="singlePostDate">{new Date(post.createdAt).toDateString()}</span>
         </div>
         <p className='singlePostDesc'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad
-          adipisci, obcaecati iure culpa nisi magnam rem molestias, impedit
-          dolores nostrum sint hic exercitationem officiis enim! Quibusdam
-          perspiciatis officia ad.
+          {post.description}
         </p>
       </div>
     </div>
