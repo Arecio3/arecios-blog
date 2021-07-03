@@ -5,8 +5,10 @@ const mongoose = require('mongoose')
 const authRoute = require('./routes/auth')
 
 dotenv.config();
+// Allows use to send json files
 app.use(express.json())
 
+// connects to mongoDb url 
 mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -14,6 +16,7 @@ mongoose.connect(process.env.MONGODB_URL, {
 }).then(console.log('Connected to mongoDb'))
 .catch((err) => console.log(err));
 
+// Let express know what route we are using for authentication
 app.use('/api/auth', authRoute)
 
 app.listen('5000', () => {
