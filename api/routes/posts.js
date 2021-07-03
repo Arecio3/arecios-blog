@@ -68,9 +68,9 @@ router.get('/:id', async (req, res) => {
 })
 
 // Get all post 
-router.get('/', async (req, res) => {
-    const username = req.query.user
-    const category = req.query.category
+router.get("/", async (req, res) => {
+    const username = req.query.user;
+    const category = req.query.category;
     try {
         let posts;
         if (username) {
@@ -79,8 +79,8 @@ router.get('/', async (req, res) => {
             // look at categories array in Post model and see if the category selected is there
             posts = await Post.find({
                 categories: {
-                    $in: [category]
-                }
+                    $in: [category],
+                },
             })
         } else {
             posts = await Post.find();
