@@ -6,7 +6,7 @@ const authRoute = require('./routes/auth')
 const userRoute = require('./routes/users')
 const postRoute = require('./routes/post')
 const categoryRoute = require('./routes/categories')
-
+const multer = require('multer')
 dotenv.config();
 // Allows use to send json files
 app.use(express.json())
@@ -17,7 +17,25 @@ mongoose.connect(process.env.MONGO_URL, {
     useUnifiedTopology: true,
     useCreateIndex: true
 }).then(console.log('Connected to mongoDb'))
-.catch((err) => console.log(err));
+    .catch((err) => console.log(err));
+
+// Takes out file and saves it inside of images folder
+const storage = multer.diskStorage({
+    // cb = callback function takes care of errors
+    destination: (req, file, cb) => {
+        // 2nd param is destination
+        cb(null, 'images')
+        // name that is being provided
+    }, filename: (req, file, cb) => {
+        cb(null, req.body.name)
+    }
+})
+
+// Sets our storage so we can upload
+const upload = multer({storage:storage})
+app.post('/api/upload', upload.single('file'), (req, res) => {
+    res.status(200).json('file has been uploaded')
+})
 
 // Let express know what route we are using for authentication
 app.use('/api/auth', authRoute)
