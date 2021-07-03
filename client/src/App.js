@@ -15,7 +15,7 @@ import {
 } from "react-router-dom";
 import './app.css'
 function App() {
-  const user = true;
+  const user = false;
   return (
     <Router className="App">
       <NavBar />

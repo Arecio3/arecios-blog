@@ -4,7 +4,7 @@ import selfie from "../../images/selfieImg.jpg";
 import "./navbar.css";
 
 export default function NavBar() {
-  const user = true;
+  const user = false;
   return (
     <div>
       <div className="top">
