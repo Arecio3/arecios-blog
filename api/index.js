@@ -3,6 +3,7 @@ const app = express();
 const dotenv = require('dotenv')
 const mongoose = require('mongoose')
 const authRoute = require('./routes/auth')
+const userRoute = require('./routes/users')
 
 dotenv.config();
 // Allows use to send json files
@@ -18,6 +19,8 @@ mongoose.connect(process.env.MONGO_URL, {
 
 // Let express know what route we are using for authentication
 app.use('/api/auth', authRoute)
+
+app.use('/api/users', userRoute)
 
 app.listen('5000', () => {
     console.log('Backend is up');
