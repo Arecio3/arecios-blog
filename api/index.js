@@ -9,7 +9,7 @@ dotenv.config();
 app.use(express.json())
 
 // connects to mongoDb url 
-mongoose.connect(process.env.MONGODB_URL, {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
