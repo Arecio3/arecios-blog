@@ -42,6 +42,11 @@
     padding: 5px;
 }
 
+.loginButton:disabled {
+    cursor: not-allowed;
+    background-color: #00b0b6;
+}
+
 .loginRegisterButton {
     position: absolute;
     top: 60px;
