@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import NavBar from './components/navBar/NavBar'
 import Home from './pages/home/Home'
 import Single from './pages/single/Single'
@@ -8,6 +8,7 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
+import { Context } from './context/Context';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +17,7 @@ import {
 import './app.css'
 
 function App() {
-  const user = false;
+  const { user } = useContext(Context);
   return (
     <Router className="App">
       <NavBar />
