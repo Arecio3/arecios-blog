@@ -25,6 +25,9 @@
   font-size: 12px;
   padding: 10px;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
 }
 .settingsDeleteTitle:hover {
     color: white;
