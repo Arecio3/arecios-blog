@@ -98,3 +98,9 @@
     align-self: flex-end;
     margin-top: 20px;
 }
+
+@media (min-width: 400px) {
+    .singlePostWrapper {
+        padding: 10px;
+    }
+}

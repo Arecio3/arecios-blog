@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from '../../context/Context';
-import selfie from "../../images/selfieImg.jpg";
 import "./navbar.css";
 
 export default function NavBar() {

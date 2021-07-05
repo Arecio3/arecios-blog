@@ -8,13 +8,14 @@ const postRoute = require('./routes/posts')
 const categoryRoute = require('./routes/categories')
 const multer = require('multer')
 const path = require('path')
+
 dotenv.config();
 // Allows use to send json files
 app.use(express.json())
-
+// Allows us to use the images folder to show image that was saved 
 app.use('/images', express.static(path.join(__dirname, '/images')))
 
-// connects to mongoDb url 
+// connects to mongoDb  
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -49,6 +50,7 @@ app.use('/api/users', userRoute)
 app.use('/api/posts', postRoute)
 
 app.use('/api/categories', categoryRoute)
+
 
 app.listen('5000', () => {
     console.log('Backend is up');

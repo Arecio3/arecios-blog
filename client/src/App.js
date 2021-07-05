@@ -20,7 +20,7 @@ function App() {
   const { user } = useContext(Context);
   return (
     <Router className="App">
-      <NavBar />
+      <NavBar className='navBar'/>
       <Switch>
         <Route exact path='/'>
             <Home />

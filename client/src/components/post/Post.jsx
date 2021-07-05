@@ -1,5 +1,4 @@
 import React from "react";
-import Nature from "../../images/natureBlogPic.jpeg";
 import { Link } from "react-router-dom";
 import "./post.css";
 

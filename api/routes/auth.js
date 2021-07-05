@@ -3,6 +3,7 @@ const User = require('../models/User')
 const bcrypt = require('bcrypt');
 
 // Register Route
+// Must be async because we are adding something to db and retrieving so there's no way on knowing how long that can take
 router.post('/register', async (req, res) => {
     try {
         const salt = await bcrypt.genSalt(10)
@@ -12,7 +13,7 @@ router.post('/register', async (req, res) => {
             email: req.body.email,
             password: hashedPass,
         })
-
+        // save method comes from mongoose 
         const user = await newUser.save()
         res.status(200).json(user)
     } catch (err) {

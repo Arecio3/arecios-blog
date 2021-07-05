@@ -84,3 +84,26 @@
   cursor: pointer;
   margin-left: 15px;
 }
+
+@media (min-width: 400px) {
+  .top {
+    width: 100%;
+  }
+  .topIcon {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .topListItem {
+    font-size: 12px;
+    margin-right: 8px;
+    padding: 3px;
+  }
+  .topImg {
+    width: 20px;
+    height: 20px;
+  }
+  .searchIcon {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}

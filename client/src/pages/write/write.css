@@ -62,3 +62,18 @@
     cursor: pointer;
     font-size: 15px;
 }
+
+@media (min-width: 400px) {
+    .writeFormGroup {
+        margin-left: 50px;
+    }
+    .writeInput {
+        width: 100%;
+    }
+    .writeImg {
+        margin-left: 50px;
+        width:  80vw;
+        object-fit: inherit;
+        height: 200px;
+    }
+}

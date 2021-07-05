@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Context } from "../../context/Context";
 import { useLocation, Link } from "react-router-dom";
-import Nature from "../../images/natureBlogPic.jpeg";
 import axios from "axios";
 import "./singlepost.css";
 

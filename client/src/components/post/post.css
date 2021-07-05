@@ -56,3 +56,20 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+@media (min-width: 400px) {
+  .post {
+      margin: 2px;
+      padding: 0;
+  }
+  .postTitle {
+    margin-top: 8px;
+  }
+  .postDescription {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  .postDate {
+    margin-top: 5px;
+  }
+}
