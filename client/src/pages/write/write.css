@@ -1,79 +1,78 @@
 .write {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .writeImg {
-    margin-left: 150px;
-    width: 70vw;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
+  margin-left: 150px;
+  width: 70vw;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .writeBlogForm {
-    position: relative;
-
+  position: relative;
 }
 
 .writeFormGroup {
-    margin-left: 150px;
-    display: flex;
-    align-items: center;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
 }
 
 .addImgIcon {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 1px solid #385898;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color: #385898;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #385898;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #385898;
+  cursor: pointer;
 }
 
 .writeInput {
-    font-size: 30px;
-    border: none;
-    padding: 20px;
-    width: 70vw;
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
 }
 
 .writeInput:focus {
-    outline: none;
+  outline: none;
 }
 
 .writeText {
-    font-size: 20px;
-    height: 100vh;
+  font-size: 20px;
+  height: 100vh;
 }
 
 .writeSubmit {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    color: white;
-    background: #2683bd;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  background: #2683bd;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-@media (min-width: 400px) {
-    .writeFormGroup {
-        margin-left: 50px;
-    }
-    .writeInput {
-        width: 100%;
-    }
-    .writeImg {
-        margin-left: 50px;
-        width:  80vw;
-        object-fit: inherit;
-        height: 200px;
-    }
+@media only screen and (max-width: 768px) {
+  .writeFormGroup {
+    margin-left: 50px;
+  }
+  .writeInput {
+    width: 100%;
+  }
+  .writeImg {
+    margin-left: 50px;
+    width: 80vw;
+    object-fit: inherit;
+    height: 200px;
+  }
 }

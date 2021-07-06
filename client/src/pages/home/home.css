@@ -1,10 +1,9 @@
 .home {
-    display: flex;
-    
+  display: flex;
 }
 
-@media (min-width: 400px) {
-    .home {
-        display: inline;
-    }
+@media only screen and (max-width: 768px) {
+  .home {
+    display: inline;
+  }
 }

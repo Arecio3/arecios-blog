@@ -11,7 +11,9 @@
   text-transform: lowercase;
   z-index: 999;
 }
-
+#toggle {
+  display: none;
+}
 .topLeft,
 .topRight {
   /* 20% left and 20% right */
@@ -26,19 +28,18 @@
 }
 
 .topIcon {
-    font-size: 20px;
-    margin-right: 10px;
-    cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .topImg {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }
-
 
 #facebookIcon {
   color: #385898;
@@ -50,20 +51,18 @@
   color: #8134af;
 }
 #pintrestIcon {
-    color: crimson;
+  color: crimson;
 }
-#snapIcon {
-    color: #ffd801;
-}
+
 .topList {
-   display: flex;
-   justify-content: center;
-   margin: 0;
-   padding: 0;
-   list-style: none;
-  }
-  
-  .topListItem {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
   font-weight: 100;
   margin-right: 30px;
   font-size: 18px;
@@ -85,25 +84,47 @@
   margin-left: 15px;
 }
 
-@media (min-width: 400px) {
+.mobileNav {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
   .top {
-    width: 100%;
+    display: none;
   }
-  .topIcon {
-    font-size: 12px;
-    margin-left: 5px;
+
+  .mobileNav {
+    display: contents;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
   }
-  .topListItem {
-    font-size: 12px;
-    margin-right: 8px;
-    padding: 3px;
+  .mobileMenu {
+    text-align: center;
+    margin: 0 30px 0 0;
+    display: none;
   }
-  .topImg {
-    width: 20px;
-    height: 20px;
+
+  .mobileMenu ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    line-height: 70px;
+    display: block;
+    border-bottom: 1px solid gray;
   }
-  .searchIcon {
-    font-size: 10px;
-    margin-left: 10px;
+
+  .mobileLabel {
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    float: right;
+    width: 26px;
+  }
+  #toggle {
+    display: none;
+  }
+  #toggle:checked + .mobileMenu{
+    display: block;
   }
 }

@@ -57,10 +57,10 @@
   -webkit-box-orient: vertical;
 }
 
-@media (min-width: 400px) {
+@media only screen and (max-width: 768px) {
   .post {
-      margin: 2px;
-      padding: 0;
+    margin: 2px;
+    padding: 0;
   }
   .postTitle {
     margin-top: 8px;
