@@ -100,7 +100,48 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .singlePost {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+  }
   .singlePostWrapper {
     padding: 10px;
+  }
+
+  .singlePostImg {
+    width: 95vw;
+  }
+
+  .singlePostInfo {
+    display: contents;
+  }
+
+  .singlePostTitleInput {
+    text-align: justify;
+    margin: 15px;
+  }
+
+  .singlePostBtn {
+    align-self: inherit;
+  }
+
+  .singlePostDescInput {
+    font-size: 15px;
+    word-wrap: break-word;
+    width: 100%;
+  }
+
+  .singlePostDesc {
+    font-size: 20px;
+  }
+
+  .singlePostIcon {
+    margin: 5px;
+  }
+
+  .singlePostDate {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

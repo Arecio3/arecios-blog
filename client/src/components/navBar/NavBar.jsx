@@ -98,7 +98,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className="mobileNav">
-        <label className='mobileLabel 'for="toggle">&#9776;</label>
+        <label className='mobileLabel 'htmlFor="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" />
         <div className="mobileMenu">
           <ul>

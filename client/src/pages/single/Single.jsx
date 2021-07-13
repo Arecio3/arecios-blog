@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidebar from '../../components/sidebar/SideBar'
 import SinglePost from '../../components/singlePost/SinglePost'
 import './single.css'
 
