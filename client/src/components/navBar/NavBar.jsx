@@ -114,7 +114,7 @@ export default function NavBar() {
             </li>
             <li>
               <Link className="link" to="/contact">
-                contact
+                Contact
               </Link>
             </li>
             <li>

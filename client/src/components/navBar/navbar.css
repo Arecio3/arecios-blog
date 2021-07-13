@@ -91,8 +91,9 @@
 @media only screen and (max-width: 768px) {
   .top {
     width: 100%;
+    display: none;
   }
-  .topIcon {
+  /* .topIcon {
     font-size: 12px;
     margin-left: 5px;
   }
@@ -108,9 +109,9 @@
   .searchIcon {
     font-size: 10px;
     margin-left: 10px;
-  }
+  } */
 
-  /* .mobileNav {
+  .mobileNav {
     display: contents;
     height: 70px;
     line-height: 70px;
@@ -120,15 +121,15 @@
     text-align: center;
     margin: 0 30px 0 0;
     display: none;
+    z-index: 999;
   }
-
+  
   .mobileMenu ul li {
     text-decoration: none;
     list-style: none;
-    margin: 0;
+    margin: 10px;
     line-height: 70px;
-    display: block;
-    border-bottom: 1px solid gray;
+    display: inline-block;
   }
 
   .mobileLabel {
@@ -140,5 +141,5 @@
   }
   #toggle:checked + .mobileMenu{
     display: block;
-  } */
+  }
 }
