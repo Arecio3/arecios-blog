@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/arecios-blog/static/css/main.bbc04684.chunk.css",
+    "main.js": "/arecios-blog/static/js/main.dd8f1627.chunk.js",
+    "main.js.map": "/arecios-blog/static/js/main.dd8f1627.chunk.js.map",
+    "runtime-main.js": "/arecios-blog/static/js/runtime-main.c1add0fb.js",
+    "runtime-main.js.map": "/arecios-blog/static/js/runtime-main.c1add0fb.js.map",
+    "static/js/2.627ca5c1.chunk.js": "/arecios-blog/static/js/2.627ca5c1.chunk.js",
+    "static/js/2.627ca5c1.chunk.js.map": "/arecios-blog/static/js/2.627ca5c1.chunk.js.map",
+    "index.html": "/arecios-blog/index.html",
+    "static/css/main.bbc04684.chunk.css.map": "/arecios-blog/static/css/main.bbc04684.chunk.css.map",
+    "static/js/2.627ca5c1.chunk.js.LICENSE.txt": "/arecios-blog/static/js/2.627ca5c1.chunk.js.LICENSE.txt",
+    "static/media/aboutAuthor.b6cbcc63.jpeg": "/arecios-blog/static/media/aboutAuthor.b6cbcc63.jpeg",
+    "static/media/headerImg.9a719201.jpeg": "/arecios-blog/static/media/headerImg.9a719201.jpeg",
+    "static/media/login.css": "/arecios-blog/static/media/login.59c1f0e3.jpeg",
+    "static/media/register.css": "/arecios-blog/static/media/register.0cc98717.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1add0fb.js",
+    "static/js/2.627ca5c1.chunk.js",
+    "static/css/main.bbc04684.chunk.css",
+    "static/js/main.dd8f1627.chunk.js"
+  ]
+}
