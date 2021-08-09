@@ -1,0 +1,79 @@
+.sideBar {
+  flex: 3;
+  height: fit-content;
+  margin: 20px;
+  background-color: #d1d7e0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.sidebarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.sidebarImg {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 14px;
+}
+
+/* Goes to sidebarItem parent and selects all the p tags */
+.sidebarItem > p {
+  padding: 20px;
+  font-family: "lora", sans-serif;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.sidebarList {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.sidebarListItem {
+  /* Puts each Li horizontal */
+  display: inline-block;
+  /* Puts each Li in its own line */
+  width: 50%;
+  margin-top: 5px;
+  cursor: pointer;
+  font-family: "lora", sans-serif;
+}
+
+.sidebarSocial {
+  margin-top: 15px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarIcon {
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .sideBar {
+    margin: 10px;
+  }
+}
