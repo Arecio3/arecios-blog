@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 
 // Register Route
 // Must be async because we are adding something to db and retrieving so there's no way on knowing how long that can take
-router.post('https://deep-thoughttss.herokuapp.com/register', async (req, res) => {
+router.post('/register', async (req, res) => {
     try {
         const salt = await bcrypt.genSalt(10)
         const hashedPass = await bcrypt.hash(req.body.password, salt)
@@ -23,7 +23,7 @@ router.post('https://deep-thoughttss.herokuapp.com/register', async (req, res) =
 })
 
 // Login Route
-router.post('https://deep-thoughttss.herokuapp.com/login', async (req, res) => {
+router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({username: req.body.username})
         !user && res.status(400).json('Wrong Credentials')
