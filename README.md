@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Deep Thoughts
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+  # Live Site
+  [Link](https://deep-thoughttss.herokuapp.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  # Table of Contents 
+  * [Installation](#Installation) 
+  * [Usage](#Usage) 
+  * [License](#license)
+  * [Contributing](#Contribute) 
+  * [Testing](#Testing)
+  * [Questions](#Questions)
+  
+  # Description 
+Make an account and create blogs of your Deep Thoughts with the help of Mongoose and Express routes a user will have secure and private accounts, read they're own as well as other users blogs in the main dashboard if the blog was posted by the user then only they are allowed to edit the blog, if not they are only show the date, time, and user associated with the blog. You are also permitted with the help of Multer upload an image from your computer for your blog thumbnail and user profile. Not only are you able to search blogs through the dashboard but by also by category.
 
-## Available Scripts
+<img src="api/images/blog1.png"></img>
+<img src="api/images/blog2.png"></img>
+<img src="api/images/blog3.png"></img>
+<img src="api/images/blog4.png"></img>
+<img src="api/images/blog5.png"></img>
+<img src="api/images/blog6.png"></img>
+<img src="api/images/blog7.png"></img>
+  
+  # Installation
+   **npm i**
 
-In the project directory, you can run:
+  # Contribute
+  **Create pull request**
 
-### `yarn start`
+  # Usage
+  **git clone**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  # Questions
+  If you had any questions feel free to contact my email cuba289@gmail.com
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  To see more of my work visit me here [Arecio3](https://github.com/Arecio3)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  # License
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
